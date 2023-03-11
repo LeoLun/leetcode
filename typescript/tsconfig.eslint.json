@@ -1,0 +1,10 @@
+// tsconfig.eslint.json
+{
+  "extends": "./tsconfig.json",
+  "include": [
+    "src",
+    ".eslintrc.js",
+    "babel.config.js",
+    "setupFilesAfterEnv.ts"
+  ]
+}

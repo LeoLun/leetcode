@@ -2,7 +2,10 @@
   "name": "leetcode",
   "version": "1.0.0",
   "description": "leetcode",
-  "scripts": {},
+  "scripts": {
+    "test:all": "jest ./src",
+    "test": "npx jest ./src/leetcode168"
+  },
   "keywords": [
     "leetcode"
   ],

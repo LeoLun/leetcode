@@ -4,7 +4,7 @@
   "description": "leetcode",
   "scripts": {
     "test:all": "jest ./src",
-    "test": "npx jest ./src/leetcode55"
+    "test": "npx jest ./src/leetcode45"
   },
   "keywords": [
     "leetcode"

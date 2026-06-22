@@ -11,7 +11,7 @@
  */
 
 function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): ListNode | null {
-  type TagListNode = ListNode & { tag?: Boolean };
+  type TagListNode = ListNode & { tag?: boolean };
 
   let currentA = headA as TagListNode;
   let currentB = headB as TagListNode;

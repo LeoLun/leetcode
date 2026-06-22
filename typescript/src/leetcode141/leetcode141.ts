@@ -1,5 +1,5 @@
 function hasCycle(head: ListNode | null): boolean {
-  type TagListNode = ListNode & { tag?: Boolean };
+  type TagListNode = ListNode & { tag?: boolean };
 
   if (!head) {
     return false;

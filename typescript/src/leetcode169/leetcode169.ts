@@ -7,7 +7,7 @@ function majorityElement(nums: number[]): number {
     if (count === 0) {
       result = num;
     }
-    count += ((num === result) ? 1 : -1);
+    count += num === result ? 1 : -1;
   }
 
   return result;

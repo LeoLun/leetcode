@@ -1,30 +1,27 @@
-/* eslint-disable max-classes-per-file */
-/* eslint-disable @typescript-eslint/no-unused-vars */
-class ListNode {
+class TestListNode {
   val: number;
 
-  next: ListNode | null;
+  next: TestListNode | null;
 
-  constructor(val?: number, next?: ListNode | null) {
-    this.val = (val === undefined ? 0 : val);
-    this.next = (next === undefined ? null : next);
+  constructor(val?: number, next?: TestListNode | null) {
+    this.val = val === undefined ? 0 : val;
+    this.next = next === undefined ? null : next;
   }
 }
 
-class TreeNode {
+class TestTreeNode {
   val: number;
 
-  left: TreeNode | null;
+  left: TestTreeNode | null;
 
-  right: TreeNode | null;
+  right: TestTreeNode | null;
 
-  constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
-    this.val = (val === undefined ? 0 : val);
-    this.left = (left === undefined ? null : left);
-    this.right = (right === undefined ? null : right);
+  constructor(val?: number, left?: TestTreeNode | null, right?: TestTreeNode | null) {
+    this.val = val === undefined ? 0 : val;
+    this.left = left === undefined ? null : left;
+    this.right = right === undefined ? null : right;
   }
 }
 
-const globalAny: any = global;
-globalAny.ListNode = ListNode;
-globalAny.TreeNode = TreeNode;
+globalThis.ListNode = TestListNode;
+globalThis.TreeNode = TestTreeNode;

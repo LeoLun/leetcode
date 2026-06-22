@@ -1,0 +1,4 @@
+interface:
+  display_name: "Init LeetCode TS"
+  short_description: "Scaffold TypeScript LeetCode entries"
+  default_prompt: "Use $init-leetcode-ts to initialize a TypeScript LeetCode entry and tests without implementing the solution."

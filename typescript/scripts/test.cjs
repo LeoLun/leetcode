@@ -14,11 +14,11 @@ const normalizeTarget = (value) => {
   }
 
   if (/^\d+$/.test(value)) {
-    return `./src/leetcode${value}`;
+    return `./src/leetcode${value}/`;
   }
 
   if (/^leetcode\d+$/.test(value)) {
-    return `./src/${value}`;
+    return `./src/${value}/`;
   }
 
   return value;
